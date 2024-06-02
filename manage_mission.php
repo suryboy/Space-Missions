@@ -10,7 +10,7 @@
 <body>
     <div class="manage-mission">
         <h1>MANAGE MISSION</h1>
-        <p>Yes</p>
+        <p>Are you sure you want to call this mission early?</p>
         <?php
         $mission_ID = $_GET["id"];
         $superZmienna = sprintf("href='odeslanieMisji.php?id=%d'", $mission_ID);
