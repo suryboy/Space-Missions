@@ -1,0 +1,752 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+* {
+    text-align: center;
+    font-family: "Pixelify Sans", sans-serif;
+    box-sizing: border-box;
+    font-size: large;
+}
+
+body {
+    background-color: black;
+    background-image: url(./img/space-background-gif.gif);
+    background-size: auto; /* Use auto or specific size */
+    background-repeat: repeat;
+    margin: 0;
+    animation: moveBackground 60s linear infinite;
+}
+
+@keyframes moveBackground {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 0px -1000px; /* Adjust this value for the desired speed and direction */
+    }
+}
+
+
+header {
+    color: white;
+    padding: 24px;
+    height: 50vh;
+    border-bottom: 5px solid white;
+}
+
+#header-items {
+    display:block;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#header-items h1 {
+    display: inline;
+    margin: auto;
+    
+}
+
+#header-items button {
+    width: 20%;
+    height: 5%;
+}
+
+#mainmenu {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 5px solid white;
+    padding: 50px;
+}
+
+h1 {
+    font-size: 70px;
+    color: white;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+}
+
+#mainmenu h1{
+    margin-top: 0;
+}
+
+#mainmenu button {
+    margin: 10px;
+}
+
+h2 {
+    margin-top: 8px;
+    margin-bottom: 0;
+    font-size: 40px;
+    color: white;
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: black;
+}
+
+h3 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 30px;
+    color: white;
+    -webkit-text-stroke-width: 0.25px;
+    -webkit-text-stroke-color: black;
+}
+
+div {
+    position: relative;
+    color: white;
+    background-color: black;
+}
+
+button {
+    font-size: larger;
+    padding: 15px;
+    margin-bottom: 0;
+    width: 90%;
+    background-color: white;
+    border-radius: 0;
+    border: 0;
+    font-weight: 900;
+}
+
+input {
+    font-size: larger;
+    margin-bottom: 0;
+    padding: 5px;
+    width: 90%;
+    background-color: white;
+    border-radius: 0;
+    border: 0;
+}
+
+button:hover {
+    background-color: rgb(221, 221, 221);
+    cursor: pointer;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mission-list {
+    float: left;
+    height: 80vh;
+    padding: 10px;
+    background-color: black;
+    border-right: 5px solid white;
+    overflow-x: hidden;
+    width: 15%;
+}
+
+.mission-list h2 {
+    margin-bottom: 0;
+}
+
+#separator {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 18px;
+    margin-top: 18px;
+}
+
+select {
+    background-color: black;
+}
+
+p, span {
+    margin: 0;
+    font-size: 30px;
+    text-align: left;
+}
+
+span {
+    margin-left: 10px;
+}
+
+.log-panel {
+    color: white;
+    float: left;
+    height: 80vh;
+    background-color: black;
+    width: 60%;
+    text-align: left;
+    border-right: 5px solid white;
+}
+
+.log-panel h2 {
+    width: 100%;
+    padding-bottom: 8px;
+    border-bottom: 5px solid white;
+}
+
+.log-panel div {
+    padding: 10px;
+}
+
+.log-panel p {
+    margin-bottom: 15px;
+}
+
+.log-panel img {
+    float: left;
+    margin-left: 5px;
+    margin-right: 15px;
+    padding-top: 7px;
+}
+
+.mission-info-panel {
+    color: white;
+    float: left;
+    height: 80vh;
+    padding: 10px;
+    background-color: black;
+    width: 25%;
+    min-width: 10%;
+}
+
+#mission-add-form {
+    background-color: black;
+    margin: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    border: 5px solid white;
+    padding: 50px;
+    width: 80%; /* Adjust this value as needed */
+    max-width: 600px; /* Adjust this value as needed */
+    box-sizing: border-box;
+}
+
+#mission-add-form select {
+    border: 0;
+    width: 90%;
+    background-color: white;
+    padding: 10px;
+}
+
+#mission-add-form label {
+    font-size: 40px;
+    color: white;
+}
+
+#mission-add-form input {
+    font-size: 25px;
+    color: white;
+    margin: 20px;
+    width: calc(100% - 40px); /* Adjust width to ensure it fits within the container */
+}
+
+#mission-add-form div {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center the items horizontally */
+    margin-bottom: 20px;
+    width: 100%; /* Ensure the div takes full width */
+}
+
+#mission-add-form div p {
+    margin: 0;
+    margin-top: 15px;
+    font-size: 35px;
+    color: white; /* Ensure the text color matches */
+}
+
+#mission-add-form div input {
+    margin-bottom: 0;
+}
+
+
+#mission-add-form p {
+    margin: 0;
+    padding: 0;
+    font-size: 25px;
+    color: white;
+    margin-left: 10px;
+}
+
+#mission-add-form h1 {
+    margin: 0;
+    margin-bottom: 50px;
+    text-align: center;
+    color: white;
+}
+
+#mission-add-form button {
+    margin: 10px;
+}
+
+#mission-add-form input, select, textarea {
+    color: black;
+}
+
+
+
+#personnel-edit-form {
+    background-color: black;
+    margin-left: auto;
+    margin-right: auto;
+    border: 5px solid white;
+    padding: 38px;
+    width: 80%; /* Adjust this value as needed */
+    max-width: 50%; /* Adjust this value as needed */
+}
+
+#personnel-edit-form select {
+    border: 0;
+    width: 90%;
+    background-color: white;
+    padding: 10px;
+}
+
+#personnel-edit-form label {
+    font-size: 40px;
+    color: white;
+}
+
+#personnel-edit-form input {
+    font-size: 25px;
+    color: white;
+    margin: 20px;
+}
+
+#personnel-edit-form h1 {
+    margin: 0;
+    margin-bottom: 50px;
+}
+
+#personnel-edit-form button {
+    margin: 10px;
+}
+
+#personnel-edit-form textarea {
+    font-size: 25px;
+    margin: 20px;
+    width: 90%;
+    resize: none;
+}
+
+#personnel-edit-form input, select, textarea{
+    color: black;
+}
+
+.mission-details {
+    padding: 10px;
+    text-align: left;
+    width: 100%;
+}
+
+.mission-details p {
+    font-size: larger;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+.mission-details img {
+    float: left;
+    margin-right: 5px;
+}
+
+.mission-details button {
+    margin: 0;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+#details-health {
+    float: right;
+    font-size: 21px;
+}
+
+.company-stats {
+    color: white;
+    height: 10vh;
+    background-color: black;
+    border-bottom: 5px solid white;
+    display: flex; /* Added */
+    justify-content: center; /* Added */
+    align-items: center; /* Added */
+}
+
+.company-stats p {
+    display: inline;
+}
+
+.company-stats span {
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 30px;
+}
+
+.hire-employees {
+    float: left;
+    width: 100%;
+    color: white;
+    height: 52vh;
+    background-color: black;
+    border-bottom: 5px solid white;
+    justify-content: center; /* Added */
+    align-items: center; /* Added */
+}
+
+.hire-employees h2 {
+    font-size: 40px;
+    color: white;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    text-align: center;
+}
+
+.hire-employees table {
+    width: 100%;
+}
+
+.hire-employees td {
+    width: 50%;
+}
+
+.hire-employees p {
+    text-align: center;
+}
+
+#hire-form {
+    width: 80%;
+    margin-left: 10%;
+}
+
+#hire-form label {
+    font-size: 20px;
+    margin: 10px 0 5px;
+}
+
+#hire-form select {
+    font-size: 18px;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: white;
+    color: black;
+    border: 0;
+    border-radius: 5px;
+    height: auto;
+}
+
+#hire-form option {
+    font-size: 18px;
+    padding: 5px;
+}
+
+#hire-form button {
+    font-size: larger;
+    padding: 15px;
+    width: 100%;
+    background-color: white;
+    border: 0;
+    font-weight: 900;
+    cursor: pointer;
+}
+
+#hire-form button:hover {
+    background-color: rgb(221, 221, 221);
+}
+
+.manage-employees {
+    float: left;
+    width: 100%;
+    height: 35vh;
+    border-bottom: 5px solid white;
+    background-color: black;
+    color: white;
+}
+
+.manage-employees img {
+    padding-top: 4px;
+}
+
+.manage-employees .table-container {
+    max-height: 38vh; /* Adjust the height as needed */
+    width: 80%; /* Adjusted width */
+    margin: 0 auto; /* This centers the table horizontally */
+    border-left: 5px solid white;
+    border-right: 5px solid white;
+    border-top: 5px solid white;
+}
+
+.manage-employees h2 {
+    font-size: 40px;
+    margin-bottom: 10px;
+    color: white;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    text-align: center;
+    
+}
+
+#hirecost {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    top: 5px;
+    left: 2.5px;
+}
+
+.error-message {
+    color: red;
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+.manage-employees table {
+    table-layout: fixed; /* Added to fix the table layout */
+    width: 100%; /* Ensures the table takes the full width of the container */
+}
+
+.manage-employees td {
+    width: 25%;
+    padding: 5px;
+    border-bottom: 2px white solid;
+    border-top: 2px white solid;
+    border-collapse: collapse;
+}
+
+.manage-employees th {
+    font-size: larger;
+    border-bottom: 2px white solid;
+    position: sticky;
+    width: 25%;
+    padding: 15px;
+}
+
+.manage-employees .table-body-container {
+    max-height: calc(35vh - 18vh);
+    overflow-y: auto;
+}
+
+.employee-stats {
+    float: left;
+    margin-top: 20px;
+    margin-right: 10%;
+    margin-left: 10%;
+    padding: 20px;
+    width: 80%;
+    border: 5px solid white;
+    background-color: black;
+    color: white;
+}
+
+.employee-stats h3 {
+    margin-top: 0;
+    font-size: 30px;
+    color: white;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+}
+
+.employee-stats p {
+    font-size: 18px;
+    margin: 5px 0;
+}
+
+.research {
+    float: left;
+    width: 100%;
+    height: 74vh;
+    border-bottom: 5px solid white;
+    background-color: black;
+    color: white;
+}
+
+#researchImg {
+    padding-right: 2.5px;
+    padding-left: 2.5px;
+}
+
+#researchCost {
+    margin: 0;
+    margin-left: 5px;
+}
+
+.research h2 {
+    margin-bottom: 8px;
+}
+
+.researchThing {
+    display:inline-block;
+    width: 33%;
+}
+
+.researchThing img {
+    margin: 5px 20px 10px 20px;
+}
+
+.researchThing div p {
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+}
+
+.researchThing button {
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-size: larger;
+}
+
+.researchThing p {
+    text-align: center;
+    width: 70%;
+    padding: 5px;
+    margin: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+}
+
+.manage-mission {
+    background-color: black;
+    margin-left: auto;
+    margin-right: auto;
+    border: 5px solid white;
+    padding: 38px;
+    width: 80%; /* Adjust this value as needed */
+    max-width: 50%; /* Adjust this value as needed */
+}
+
+.manage-mission p {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.manage-mission button {
+    margin: 10px;
+}
+
+.dashboard {
+    float: left;
+    width: 100%;
+    background-color: black;
+}
+
+.resource {
+    margin-top: 18px;
+    margin-bottom: 5px;
+    background-color: black;
+}
+
+.allocateimg {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    right: 8px;
+    top: 15px;
+}
+
+
+#resourcestoallocate div {
+    display: table-column-group;
+}
+
+.crafting-items {
+    float: left;
+    width: 100%;
+    height: 70vh;
+    border-bottom: 5px solid white;
+    background-color: black;
+    color: white;
+}
+
+.crafting-items p {
+    text-align: center;
+}
+
+.crafting-items h2 {
+    padding-top: 15px;
+}
+
+.item {
+    display:inline-block;
+    width: 33%;
+    padding: 25px;
+    padding-bottom: 0;
+    padding-top: 20px;
+}
+
+.item label {
+    margin-top: 50px;
+    font-size: 30px;
+}
+
+#item-icon {
+    margin: 5px 20px 10px 20px;
+}
+
+#itemCost {
+    margin: 0;
+    margin-left: 5px;
+}
+
+.item div p {
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+}
+
+.item button {
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-size: larger;
+}
+
+.item p {
+    text-align: center;
+    width: 70%;
+    padding: 5px;
+    margin: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+}
+
+.selling-items {
+    float: left;
+    width: 100%;
+    height: 71vh;
+    border-bottom: 5px solid white;
+    background-color: black;
+    color: white;
+}
+
+
+#callearly {
+    background-color:rgb(216, 20, 20);
+    color: white;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+ul, li {
+    padding: 0;
+    padding-top: 5px;
+    list-style-type: none;
+}
+
+ul {
+    margin: 0;
+}
+
+.ui-resizable-handle {
+    opacity: 0; /* Make the handle transparent */
+    width: 2px;
+    pointer-events: auto; /* Allow pointer events */
+}
