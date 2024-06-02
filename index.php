@@ -12,7 +12,7 @@
         <h1>SPACE MISSIONS</h1>
 
         <a href="./mission_control.php"><button>MAIN PANEL</button></a>
-        <a href="./mission_control.php"><button>ABOUT</button></a>
+        <a href="https://www.youtube.com/watch?v=vl6jn-DdafM"><button>ABOUT</button></a>
     </div>
 
     <script src="./script.js"></script>
