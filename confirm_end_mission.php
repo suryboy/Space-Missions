@@ -5,7 +5,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $mission_id = intval($_POST['mission_id']);
 
     // Retrieve resources from the mission
-    $resources_query = "SELECT water, oxygen, research, metals, synthetics FROM resources WHERE id = $mission_id";
+    $resources_query = "SELECT water, oxygen, research, money, metals, synthetics FROM resources WHERE id = $mission_id";
     $resources_result = mysqli_query($connection, $resources_query);
     $resources = mysqli_fetch_assoc($resources_result);
 
@@ -16,6 +16,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             water = water + {$resources['water']},
             oxygen = oxygen + {$resources['oxygen']},
             research = research + {$resources['research']},
+            money = money + {$resources['money']},
             metals = metals + {$resources['metals']},
             synthetics = synthetics + {$resources['synthetics']}
         WHERE id = 1"; // Assuming 1 is the main base resources ID
@@ -28,6 +29,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             water = 0,
             oxygen = 0,
             research = 0,
+            money = 0,
             metals = 0,
             synthetics = 0
         WHERE id = $mission_id";
